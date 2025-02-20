@@ -1,20 +1,84 @@
-.container{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #C394D1;
+    height: 16vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    height: 100vh;  
-}
-.container img{
-    width: 30vh;
-}
-.cards{
-    display: flex;
-    align-items: center; 
-    margin: 2%; 
-    flex-direction: column;
+    font-family: 'Poppins';
     
 }
 
-.cards p{
-    padding-top: 2px;
+.links{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 9vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+}
+
+.links a {
+    color: #C394D1;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    transition: opacity 0.3s linear;
+}
+
+.links a:hover{
+    opacity: 0;
+
+}
+input{
+    border: white;
+    outline: none; 
+    font-size:  1rem;
+    text-indent: 10px;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.search-bar{
+    height: 4%;
+    width: 14%;
+    position: absolute;
+    left: 8%;
+    display: flex;
+    background-color: white;
+    border-radius: 6px;
+    column-gap: 3%;
+}
+svg{
+    height: 100%;
+    padding-right: 5px;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    
+}
+
+.cards img{
+    width: 55%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.cards{
     font-family: 'Poppins';
+    text-align: center;
 }

@@ -1,13 +1,39 @@
+<div class="header">
+  <div class="search-bar">
+  <input type="text" placeholder="Buscar" />
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    fill="currentColor"
+    class="bi bi-search"
+    viewBox="0 0 16 16"
+  >
+    <path
+      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+    />
+  </svg>
+</div>
+  <h1>PANGEIA</h1>
+</div>
+<nav class="links">
+  <a href="">VER TUDO</a>
+  <a href="">CALÇAS</a>
+  <a href="">BODIES</a>
+  <a href="">TOPS</a>
+  <a href="">VESTIDOS</a>
+  <a href="">SAIAS</a>
+  <a href="">MACACÔES</a>
+  <a href="">SALE</a>
+  <a href="">RASTREIO</a>
+  <a href="">TROCAS E DEVOLUÇÕES</a>
+</nav>
+
 <div class="container">
-@for (produto of produtos(); track $index) {
-
-
-  <div class="cards">
+  <div *ngFor="let produto of produtos()" class="cards">
     <img [src]="produto.img" alt="foto-produto" />
     <p>{{ produto.nome }}</p>
-    <p>{{ produto.editora }}</p>
+    <p>{{ produto.avaliacoes }}</p>
     <p>{{ produto.preco }}</p>
   </div>
-}
 </div>
-
